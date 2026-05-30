@@ -9,58 +9,85 @@
             background: transparent !important;
         }
         [data-custom-class='title'], [data-custom-class='title'] * {
-            font-family: Arial !important;
+            font-family: Arial, sans-serif !important;
             font-size: 26px !important;
             color: #000000 !important;
         }
         [data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
-            font-family: Arial !important;
+            font-family: Arial, sans-serif !important;
             color: #595959 !important;
             font-size: 14px !important;
         }
         [data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
-            font-family: Arial !important;
+            font-family: Arial, sans-serif !important;
             font-size: 19px !important;
             color: #000000 !important;
         }
         [data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
-            font-family: Arial !important;
+            font-family: Arial, sans-serif !important;
             font-size: 17px !important;
             color: #000000 !important;
         }
         [data-custom-class='body_text'], [data-custom-class='body_text'] * {
             color: #595959 !important;
             font-size: 14px !important;
-            font-family: Arial !important;
+            font-family: Arial, sans-serif !important;
         }
         [data-custom-class='link'], [data-custom-class='link'] * {
             color: #3030F1 !important;
             font-size: 14px !important;
-            font-family: Arial !important;
+            font-family: Arial, sans-serif !important;
             word-break: break-word !important;
         }
         body {
-            padding: 20px;
+            padding: 30px 20px;
             max-width: 800px;
             margin: 0 auto;
             background-color: #ffffff !important;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        h1, h2, h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+            color: #595959;
+        }
+        th {
+            background-color: #f9f9f9;
+            color: #000;
         }
     </style>
 </head>
 <body>
-    <span style="display: block;margin: 0 auto 3.125rem;width: 11.125rem;height: 2.375rem;background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzgiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCAxNzggMzgiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBmaWxsPSIjRDFEMUQxIiBkPSJNNC4yODMgMjQuMTA3Yy0uNzA1IDAtMS4yNTgtLjI1Ni0xLjY2LS43NjhoLS4wODVjLjA1Ny41MDIuMDg2Ljc5Mi4wODYuODd2Mi40MzRILjk4NXYtOC42NDhoMS4zMzJsLjIzMS43NzloLjA3NmMuMzgzLS41OTQuOTUtLjg5MiAxLjcwMi0uODkyLjcxIDAgMS4yNjQuMjc0IDEuNjY1LjgyMi40MDEuNTQ4LjYwMiAxLjMwOS42MDIgMi4yODMgMCAuNjQtLjA5NCAxLjE5OC0uMjgyIDEuNjctLjE4OC40NzMtLjQ5Ni44MzMtLjgwMyAxLjA4LS4zNDcuMjQ3LS43NTYuMzctMS4yMjUuMzd6TTMuOCAxOS4xOTNjLS40MDUgMC0uNy4xMjQtLjg4Ni4zNzMtLjE4Ny4yNDktLjI4My42Ni0uMjkgMS4yMzN2LjE3N2MwIC42NDUuMDk1IDEuMTA3LjI4NyAxLjM4Ni4xOTIuMjguNDk1LjQxOS45易0uNDE5LjczNCAgMS4xMDEtLjYwNSAxLjEwMS0xLjgxNiAwLS41OS0uMDktMS4wMzQtLjI3LTEuMzI5LS4xODItLjk1LS40NjUtLjQ0My0uODUyLS40NDN6bTkuNTcgMS43OTRjMCAuNTk0LjA5OCAxLjA0NC4yOTMgMS4zNDguMTk2LjMwNC41MTMuNDU3Ljk1NC40NTcuNDM3IDAgLjc1LS4xNTIuOTQyLS40NTQuMTkyLS4zMDMuMjg4LS43NTMuMjg4LTEuMzUxIDAtLjU5NS0uMDk3LTEuMDQtLjI5LTEuMzM4LS4xOTQtLjI5Ny0uNTEtLjQ0NS0uOTUtLjQ0NS0uNDM4IDAtLjc1My4xNDctLjk0Ni40NDMtLjE5NC4yOTUtLjI5Ljc0Mi0uMjkgMS4zNHptNC4xNTMgMGMwIC45NzctLjI1OCAxLjc0Mi0uNzc0IDIuMjkzLS41MTUuNTUyLTEuMjMzLjgyNy0yLjE1NC44MjctLjU3NiAwLTEuMDg1LS4xMjYtMS41MjUtLjM3OGEyLjUyIDIuNTIgMCAwIDEtMS4wMTUtMS4wODhjLS4yMzctLjQ3My0uMzU1LTEuMDI0LS4zNTUtMS42NTQgMC0uOTgxLjI1Ni0xLjc0NC43NjgtMi4yODguNTEyLS41NDUgMS4yMzItLjgxNyAyLjE2LS44MTcuNTc2IDAgMS4wODUuMTI2IDEuNTI1LjM3Ni40NC4yNTEuNzc5LjYxIDEuMDE1IDEuMDguMjM2LjQ2OS4zNTUgMS4wMTkuMzU1IDEuNjQ5ek0xOS43MSAyNGwtLjQ2Mi0yLjEtLjYyMy0yLjY1M2gtLjAzN0wxNy40OTMgMjRIMTUuNzNsLTEuNzA4LTYuMDA1aDEuNjMzbC42OTMgMi42NTljLjExLjQ3Ni4yMjQuMS4xMzMuMzM4IDEuOTcxaC4wMzJjLjAxNS0uMjcyLjA3Ny0uNzA0LjE4OC0xLjI5NGwuMDg2LS40NTcuNzQyLTIuODc5aDEuODA0bC43MDQgMi44NzljLjAxNC4wNzkuMDM3LjE5NS4wNjcuMzVhMjAuOTk4IDIwOTk4IDAgMCAxIC4xNjcgMS4wMDJjLjAyMy4xNjUuMDM2LjI5OS4wNC4zOTloLjAzMmMuMDMyLS4yNTguMDktLjYxMS4xNzItMS4wNi4wODItLjQ1LjE0MS0uNzU0LjE3Ny0uOTExbC43Mi0yLjY1OWgxLjYwNkwyMS40OTQgMjRoLTEuNzgzem03LjA4Ni00Ljk1MmMtLjM0OCAwLS42Mi4xMS0uODE3LjMzLS4xOTcuMjItLjMxLjUzMy0uMzM4LjkzN2gyLjI5OWMtLjAwOC0uNDA0LS4xMTMtLjcxNy0uMzE3LS45MzctLjIwNC0uMjItLjQ4LS4zMy0uODI3LS4zM3ptLjIzIDUuMDZjLS45NjYgMC0xLjcyMi0uMjY3LTIuMjY2LS44LS40NDQtLjUzNC0uODE2LTEuMjktLjgxNi0yLjI2NyAwLTEuMDA3LjI1MS0xLjc4NS43NTQtMi4zMzQuNTAzLS41NSAxLjE5OS0uODI1IDIuMDg3LS44MjUuODQ4IDAgMS41MS4yNDIgMS45ODIuNzI1LjQ3Mi40ODQuNzA5IDEuMTUyLjcwOSAyLjAwNHYuNzk1aC0zLjg3M2MuMDE4LjQ2NS4xNTYuODI5LjQxNCAxLjA5LjI1OC4yNjEuNjIuMzkyIDEuMDg1LjM5Mi4zNjEgMCAuNzAzLS4wMzcgMS4wMjYtLjExM2E1LjEzMyA1LjEzMyAwIDAgMCAxLjAxLS4zYnYxLjI2OGMtLjI4Ny4xNDMtLjU5My4yNS0uOTIuMzJhNS43OSA1Ljc5IDAgMCAxLTEuMTkxLjEwNHptNy4yNTMtNi4yMjZjLjIyMiAwIDMuNDA2LjAxNi41NTMuMDQ5bC0uMTI0IDEuNTM2YTEuODc3IDEuODc3IDAgMCAwLS40ODMtLjA1NGMtLjUyMyAwLS45My4xMzQtMS4yMjIuNDAzLS4yOTIuMjY4LS40MzguNjQ0LS40MzggMS4xMjhWMjRoLTEuNjM4di02LjAwNWgxLjI0bC4yNDIgMS4wMWguMDhjLjE4Ny0uMzM3LjQzOS0uNjA4Ljc1Ni0uODE0YTEuODYgMS44NiAwIDAgMSAxLjAzNC0uMzA5em00LjAyOSAxLjE2NiYtLjM0NyAwLS42Mi4xMS0uODE3LjMzLS4xOTcuMjItLjMxLjUzMy0uMzM4LjkzN2gyLjI5OWMtLjAwNy0uNDA0LS4xMTMtLjcxNy0uMzE3LS45MzctLjIwNC0uMjItLjQ4LS4zMy0uODI3LS4zM3ptLjIzIDUuMDZjLS45NjYgMC0xLjcyMi0uMjY3LTIuMjY2LS44LS40NDQtLjUzNC0uODE2LTEuMjktLjgxNi0yLjI2NyAwLTEuMDA3LjI1MS0xLjc4NS43NTQtMi4zMzQuNTA0LS41NSAxLjItLjgyNSAyLjA4Ny0uODI1Ljg0OSAwIDEuNTEuMjQyIDEuOTgyLjcyNS40NzMuNDg0LjcwOSAxLjE1Mi43MDkgMi4wMDR2Ljc5NWgtMy44NzNjLjAxOC40NjUuMTU2LjgyOS40MTQgMS4wOS4yNTguMjYxLjYyLjM5MiAxLjA4NS4zOTIuMzYyIDAgLjcwNC0uMDM3IDEuMDI2LS4xMTNhNS4xMzMgNS4xMzMgMCAwIDAgMS4wMS0uMzZ2MS4yNjhjLS4yODcuMTQzLS41OTMuMjUtLjkxOS4zMmE1Ljc5IDUuNzkgMCAwIDEtMS4xOTIuMTA0em01LjgwMyAwYy0uNzA2IDAtMS4yNi0uMjc1LTEuNjYzLS44MjItLjQwMy0uNTQ4LS42MDQtMS4zMDctLjYwNC0yLjI3OCAwLS45ODQuMjA1LTEuNzUyLjYxNS0yLjMwMS40MS0uNTUuOTc1LS44MjUgMS42OTUtLjgyNS43NTUgMCAxLjMzMi4yOTQgMS43MjkuODgxaC4wNTRhNi42OTcgNi42OTcgMCAwIDEtLjEyNC0xLjE5OHYtMS45MjJoMS42NDRWMjRDNDYuNDNsLS4zMTctLjc3OWgtLjA3Yy0uMzcyLjU5MS0uOTQuODg2LTEuNzAyLjg4NnptLjU3NC0xLjMwNmMuNDIgMCAuNzI2LS4xMjEuOTIxLS4zNjUuMTk2LS4yNDMuMzAyLS42NTcuMzItMS4yNHYtLjE3OGMwLS42NDQtLjEtMS4xMDYtLjI5OC0xLjM4Ni0uMTk5LS4yNzktLjUyMi0uNDE5LS45Ny0uNDE5YS45NjIuOTYyIDAgMCAwLS44NS40NjVjLS4yMDMuMzEtLjMwNC43Ni0uMzA0IDEuMzUgMCAuNTkyLjEwMiAxLjAzNS4zMDYgMS4zMy4yMDQuMjk2LjQ5Ni40NDMuODc1LjQ0M3ptMTAuOTIyLTQuOTJjLjcwOSAwIDEuMjY0LjI3NyAxLjY2NS44My40LjU1My42MDEgMS4zMTIuNjAxIDIuMjc1IDAgLjk5Mi0uMjA2IDEuNzYtLjYyIDIuMzA0LS40MTQuNTQ0LS45NzcuODE2LTEuNjktLjgxNi0uNzA1IDAtMS4yNTgtLjI1Ni0xLjY1OS0uNzY4aC0uMTEzbC0uMjc0LjY2MWgtMS4yNTF2LTguMzU3aDEuNjM4djEuOTQ0YzAgLjI0Ny0uMDIxLjY0My0uMDY0IDEuMTg3aC4wNjRjLjM4My0uNTk0Ljk1LS4block-componentgMiAxLjcwMy0uODkyem0tLjUyNyAxLjMxYy0uNDA0IDAtLjcuMTI1LS44ODYuMzc0LS4xODYuMjQ5LS4yODMuNjYtLjI5IDEuMjMzdYuMTc3YzAgLjY0NS4wOTYgMS4xMDcuMjg3IDEuMzg2LjE5Mi4yOC40OTUuNDE5LjkxLjQxOS4zMzcgMCAuNjA1LS4xNTUuODA0LS40NjUuMTk5LS4zMS4yOTgtLjc2Ljk4LTEuMzUgMC0uNTkxLS4xLTEuMzM1LS4zLTEuMzNhLjk0My45NDMgMCAwIDAtLjgyMy0uNDQzem0zLjE4Ni0xLjE5N2gxLjc5NGwxLjEzNCAzLjM3OWMuMDk2LjI5My4xNjMuNjQuMTk4IDEuMDQyaC4wMzNjLjAzOS0uMzcuMTE2LS43MTcuMjMtMS4wNDJsMS4xMTItMy4zNzloMS43NTdsLTIuNTQgNi43NzNjLS4yMzQuNjI3LS41NjYgMS4wOTYtLjk5NyAxLjQwNy0uNDMyLjMxMi0uOTM2LjQ2OC0xLjUxMi40NjgtLjI4MyAwLS41Ni0uMzMtLjgzMy0uMDkydi0xLjNhMi44IDIuOCAwIDAgMCAuNjQ1LjA3Yy4yOSAwIC41NDMtLjA4OC43Ni0uMjY2LjIxNy0uMTc3LjM4Ni0uNDQ0LjUwOC0uODAzbC4wOTYtLjI5NS0yLjM4NS01Ljk2MnoiLz4KICAgICAgICA8ZyB0cmFuc29ybT0idHJhbnNsYXRlKDczKSI+CiAgICAgICAgICAgIDxjaXJjbGUgY3g9IjE5IiBjeT0iMTkiIHI9IjE5IiBmaWxsPSIjRTBFMEUwIi8+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMi40NzQgMTUuNDQzNS4xNjJMMTIuNDM2IDMwLjRWMTAuMzYzaDE1LjJsLTUuMTYyIDUuMDh6Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxwYXRoIGZpbGw9IiNEMkQyRDIiIGQ9Ik0xMjEuNTQ0IDE0LjU2di0xLjcyOGg4LjI3MnYxLjcyOGgtMy4wMjRWMjRoLTIuMjR2LTkuNDRoLTMuMDA4em0xMy43NDQgOS41NjhjLTEuMjkgMC0yLjM0MS0uNDE5LTMuMTUyLTEuMjU2LS44MS0uODM3LTEuMjE2LTEuOTQ0LTEuMjE2LTMuMzJzLjQwOC0yLjQ3NyAxLjIyNC0zLjMwNGMuODE2LS44MjcgMS44NzItMS4yNCAzLjE2OC0xLjI0czIuMzYuNDAzIDMuMTkyIDEuMjA4Yy44MzIuODA1IDEuMjQ4IDEuODggMS4yNDggMy4yMjQgMCAuMzEtLjAyMS41OTctLjA2NC44NjRoLTYuNDY0Yy4wNTMuNTc2LjI2NyAxLjA0LjY0IDEuMzkyLjM3My4zNTIuODQ4LjUyOCAxLjYyNC41MjguNzc5IDAgMS4zNTUtLjMyIDEuNzI4LS45NmgyLjQzMmEzLjg5MSAzLjg5MSAwIDAgMS0xLjQ4OCAyLjA2NGMtLjczNi41MzMtMS42MjcuOC0yLjY3Mi44em0xLjQ4LTYuNjg4Yy0uNC0uMzUyLS44ODMtLjUyOC0xLjQ0OC0uNTI4cy0xLjAzNy4xNzYtMS40MTYuNTI4Yy0uMzc5LjM1Mi0uNjA1LjgyMS0uNjggMS40MDhoNC4xOTJjLS4wMzItLjU4Ny0uMjQ4LTEuMDU2LS42NDgtMS40MDh6bTcuMDE2LTIuMzA0djEuNTY4Yy41OTctMS4xMyAxLjY0MS0xLjY5NiAyLjU5Mi0xLjY5NnYyLjMwNGgtLjU2Yy0uNjcyIDAtMS4xNzkuMTY4LTEuNTIuNTA0LS4zNDEuMzM2LS41MTIuOTE1LS41MTIgMS43MzZWMjRoLTIuMjU2di04Ljg2NGgyLjI1NnptNi40NDggMHYxLjMyOGMuNTY1LS45NyAxLjQ4My0xLjY1NiAyLjc1Mi0xLjY1Ni42NzIgMCAxLjI3Mi4xNTUgMS44LjQ2NC41MjguMzEuOTM2Ljc1MiAxLjIyNCAxLjMyOC4zMS0uNTU1LjczMy0uOTkyIDEuMjcyLTEuMzEyYTMuNDg4IDMuNDg4IDAgMCAxIDEuODE2LS40OGMxLjA1NiAwIDEuOTA3LjMzIDIuNTUyLjk5Mi42NDUuNjYxLjk2OCAxLjU5Ljk2OCAyLjc4NFYyNGgtMi4yNHYtNC44OTZjMC0uNjkzLS4xNzYtMS4yMjQtLjUyOC0xLjU5Mi0uMzUyLS4zNjgtLjgzMi0uNTUyLTEuNDQtLjU1MnMtMS4wOS4xODQtMS40NDguNTUyYy0uMzU3LjM2OC0uNTM2Ljg5OS0uNTM2IDEuNTkyVjI0aC0yLjI0di00Ljg5NmMwLS42OTMtLjxNzYtMS4yMjQtLjUyOC0xLjU5Mi0uMzUyLS4zNjgtLjgzMi0uNTUyLTEuNDQtLjU1MnMtMS4wOS4xODQtMS40NDguNTUyYy0uMzU3LjM2OC0uNTM2Ljg5OS0uNTM2IDEuNTkyVjI0aC0yLjI1NnYtOC44NjRoMi4yNTZkek0xNjQuOTM2IDI0VjEyLjE2aDIuMjU2VjI0aC0yLjI1NnptNy4wNC0uMTZsLTMuNDcyLTguNzA0aDIuNTI4bDIuMjU2IDYuMzA0IDIuMzg0LTYuMzA0aDIuMzUybC01LjUzNiAxMy4wNTZoLTIuMzUybDEuODQtNC4zNTN6Ii8+CiAgICA8L2c+Cjwvc3ZnPikgY2VudGVyIG5vLXJlcGVhdDsgbWFyZ2luLWJvdHRvbTogNDBweDsiPjwvc3Bhbj4>
 
     <div data-custom-class="body">
         <div><strong><span style="font-size: 26px;"><span data-custom-class="title"><h1>PRIVACY POLICY</h1></span></span></strong></div>
         <div><span style="color: rgb(127, 127, 127);"><strong><span style="font-size: 15px;"><span data-custom-class="subtitle">Last updated May 29, 2026</span></span></strong></span></div>
         <div><br></div>
+        
         <div style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text">This Privacy Notice for Jorge Franco ("<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"), describes how and why we might access, collect, store, use, and/or share ("<strong>process</strong>") your personal information when you use our services ("<strong>Services</strong>"), including when you:</span></span></span></div>
         <ul>
-            <li data-custom-class="body_text" style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">Download and use our mobile application (**PureSpend**), or any other application of ours that links to this Privacy Notice.</span></span></li>
+            <li data-custom-class="body_text" style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">Download and use our mobile application (<strong>PureSpend</strong>), or any other application of ours that links to this Privacy Notice.</span></span></li>
             <li data-custom-class="body_text" style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">Engage with us in other related ways, including any marketing or events.</span></span></li>
         </ul>
+        
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><span style="color: rgb(127, 127, 127);"><span data-custom-class="body_text"><strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a data-custom-class="link" href="mailto:jorgefranco7@icloud.com">jorgefranco7@icloud.com</a>.</span></span></span></div>
         <div style="line-height: 1.5;"><br></div>
+        
         <div style="line-height: 1.5;"><strong><span style="font-size: 15px;"><span data-custom-class="heading_1"><h2>SUMMARY OF KEY POINTS</h2></span></span></strong></div>
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>What personal information do we process?</strong> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use.</span></span></div>
         <div style="line-height: 1.5;"><br></div>
@@ -80,9 +107,9 @@
         <div id="infocollect" style="line-height: 1.5;"><strong><span data-custom-class="heading_1"><h2>1. WHAT INFORMATION DO WE COLLECT?</h2></span></strong></div>
         <div style="line-height: 1.5;"><span data-custom-class="body_text">We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</span></div>
         <div style="line-height: 1.5;"><br></div>
-        <div style="line-height: 1.5;"><span style="font-size: 15px;"><strong>Payment Data.</strong> We may collect data necessary to process your payment if you choose to make purchases, such as your payment instrument number, and the security code associated with your payment instrument. All payment data is handled and stored by **Apple Inc.** You may find their privacy notice link here: <a data-custom-class="link" href="https://www.apple.com/legal/privacy/data/en/app-store/" target="_blank">Apple App Store Privacy</a>.</span></div>
+        <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>Payment Data.</strong> We may collect data necessary to process your payment if you choose to make purchases, such as your payment instrument number, and the security code associated with your payment instrument. All payment data is handled and stored by <strong>Apple Inc.</strong> You may find their privacy notice link here: <a data-custom-class="link" href="https://www.apple.com/legal/privacy/data/en/app-store/" target="_blank">Apple App Store Privacy</a>.</span></span></div>
         <div style="line-height: 1.5;"><br></div>
-        <div style="line-height: 1.5;"><span style="font-size: 15px;"><strong>Application Data.</strong> If you use our application, we also may collect push notification configurations if you choose to grant permission. This information is primarily needed to maintain the security and operation of our application, for troubleshooting, and for internal analytics.</span></div>
+        <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>Application Data.</strong> If you use our application, we also may collect push notification configurations if you choose to grant permission. This information is primarily needed to maintain the security and operation of our application, for troubleshooting, and for internal analytics.</span></span></div>
         
         <div id="infouse" style="line-height: 1.5;"><strong><span data-custom-class="heading_1"><h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2></span></strong></div>
         <div style="line-height: 1.5;"><span data-custom-class="body_text">We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes only with your prior explicit consent.</span></div>
@@ -108,17 +135,49 @@
         <div id="uslaws" style="line-height: 1.5;"><strong><span data-custom-class="heading_1"><h2>9. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2></span></strong></div>
         <div style="line-height: 1.5;"><span data-custom-class="body_text">If you are a resident of California, Colorado, Connecticut, or other states with dedicated privacy laws, you have specific rights to know, access, correct, and delete your data. You can exercise these rights by contacting us at the email listed below.</span></div>
         
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Examples</th>
+                    <th>Collected</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A. Identifiers</td>
+                    <td>Contact details, real name, postal address, unique personal identifier, IP address, email address.</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>B. Customer Records</td>
+                    <td>Name, contact details, financial transaction summaries.</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>C. Protected Classes</td>
+                    <td>Gender, age, date of birth.</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>D. Commercial Info</td>
+                    <td>Transaction history, payment structures.</td>
+                    <td>NO</td>
+                </tr>
+            </tbody>
+        </table>
+        
         <div id="policyupdates" style="line-height: 1.5;"><strong><span data-custom-class="heading_1"><h2>10. DO WE MAKE UPDATES TO THIS NOTICE?</h2></span></strong></div>
         <div style="line-height: 1.5;"><span data-custom-class="body_text">Yes, we will update this notice as necessary to stay compliant with relevant laws. The updated version will be indicated by the revised date at the top of the page.</span></div>
         
         <div id="contact" style="line-height: 1.5;"><strong><span data-custom-class="heading_1"><h2>11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2></span></strong></div>
         <div style="line-height: 1.5;"><span data-custom-class="body_text">If you have questions or comments about this notice, you may email us at <a data-custom-class="link" href="mailto:jorgefranco7@icloud.com">jorgefranco7@icloud.com</a> or contact us by mail at:</span></div>
-        <div style="line-height: 1.5;"><br>Jorge Franco<br>2505 Otto Ln<br>Charlotte, NC 28262<br>United States</div>
+        <div style="line-height: 1.5; color: #595959; font-size: 14px;"><br>Jorge Franco<br>2505 Otto Ln<br>Charlotte, NC 28262<br>United States</div>
         
         <div id="request" style="line-height: 1.5;"><strong><span data-custom-class="heading_1"><h2>12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2></span></strong></div>
-        <div style="line-height: 1.5;"><span data-custom-class="body_text">To request to review, update, or delete your personal information, please submit a request to our support email address.</span></div>
+        <div style="line-height: 1.5;"><span data-custom-class="body_text">To request to review, update, or delete your personal information, please submit a request directly to our contact email address.</span></div>
     </div>
     <br>
-    <div><span data-custom-class="body_text">This Privacy Policy was hosted via GitHub Pages from an authorized Termly structure export.</span></div>
+    <div style="font-size: 12px; color: #777;"><span data-custom-class="body_text">This Privacy Policy was hosted via GitHub Pages from an authorized Termly structure export.</span></div>
 </body>
 </html>
